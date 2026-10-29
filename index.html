@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="decor"></div>
+
+<main class="app">
+
+  <!-- PAGE 1: MUSIC -->
+  <section class="page active" id="page1">
+    <div class="card">
+      <p class="tag">HSC '28 • A LITTLE SURPRISE</p>
+      <div class="music-icon">🎵</div>
+      <h1>একটু গান হবে?</h1>
+      <p class="muted">
+        তোমার জন্য ছোট্ট একটা সারপ্রাইজ তৈরি করেছি। 💗
+        <br>শুরু করার আগে বলো, গান চলবে?
+      </p>
+
+      <div class="music-disc" id="musicDisc">♫</div>
+
+      <button class="btn primary" id="musicYes">
+        হ্যাঁ, গান চালাও 🎶
+      </button>
+
+      <button class="btn secondary" id="musicNo">
+        না, গান লাগবে না 🌸
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 2: BIRTHDAY WISH -->
+  <section class="page" id="page2">
+    <div class="card">
+      <p class="tag">A LITTLE NOTE FOR YOU 💌</p>
+      <h1 id="typedWish" class="typed"></h1>
+
+      <p id="letter" class="letter hidden">
+        তোমার নতুন বছরটা হোক হাসি, শান্তি,
+        সুন্দর স্মৃতি আর সাফল্যে ভরা। 🌸
+        <br><br>
+        নিজের মতো করে সুন্দর থেকো,
+        স্বপ্নগুলো পূরণের পথে এগিয়ে যেয়ো।
+        <br><br>
+        তোমার জন্য রইল অনেক শুভকামনা! 💗
+      </p>
+
+      <button class="btn primary hidden" id="goCake">
+        এবার কেক কাটার পালা 🎂
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 3: CAKE -->
+  <section class="page" id="page3">
+    <div class="card">
+      <p class="tag">THE SWEETEST PART 🍰</p>
+      <h2>এবার কেক কাটো!</h2>
+      <p class="muted">কেকটায় ট্যাপ করো! 💗</p>
+
+      <div class="cake" id="cake">
+        <div class="candles">🕯️ 🕯️ 🕯️</div>
+        <div class="cake-top">HAPPY<br>BIRTHDAY</div>
+        <div class="cake-body"></div>
+        <div class="plate"></div>
+      </div>
+
+      <p id="cakeHint" class="muted">🎂 কেকটায় ট্যাপ করো</p>
+
+      <button class="btn primary hidden" id="goGuests">
+        সবাইকে কেক খাওয়াই 🍓
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 4: FEED EVERYONE -->
+  <section class="page" id="page4">
+    <div class="card">
+      <p class="tag">CAKE FOR EVERYONE 💗</p>
+      <h2>সবার জন্য এক টুকরো কেক!</h2>
+      <p class="muted">
+        একজন একজন করে বেছে নিয়ে সবাইকে কেক খাওয়াও।
+      </p>
+
+      <div class="guest-grid" id="guestGrid"></div>
+
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <p id="guestStatus">০ / ৮ জন কেক পেয়েছে</p>
+
+      <button class="btn primary hidden" id="goMessages">
+        এবার শুভেচ্ছা শোনা যাক 💌
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 5: WISHES -->
+  <section class="page" id="page5">
+    <div class="card">
+      <p class="tag">WISHES FROM YOUR PEOPLE 💫</p>
+      <div class="avatar" id="avatar">👵</div>
+      <p class="speaker" id="speaker"></p>
+      <h2 class="message-title" id="messageTitle"></h2>
+      <p class="message-body" id="messageBody"></p>
+
+      <div class="reply-area">
+        <p>তোমার রিপ্লাই কী হবে? 👀</p>
+        <div class="reply-options" id="replyOptions"></div>
+      </div>
+
+      <p class="count" id="messageCount"></p>
+    </div>
+  </section>
+
+  <!-- PAGE 6: END -->
+  <section class="page" id="page6">
+    <div class="card">
+      <div class="heart">💗</div>
+      <p class="tag">A LITTLE SURPRISE FOR YOU</p>
+      <h1>শুভ জন্মদিন! 🎂</h1>
+
+      <p class="final-text">
+        তোমার প্রতিটি দিন সুন্দর হোক,
+        প্রতিটি স্বপ্ন এগিয়ে যাক পূরণের পথে।
+        <br><br>
+        সবসময় হাসিখুশি থেকো,
+        নিজের যত্ন নিও আর অনেক ভালো থেকো। 🌸
+        <br><br>
+        HSC '28-এর পক্ষ থেকে অনেক শুভকামনা! ✨
+      </p>
+
+      <h2>— আনারস 🍍</h2>
+
+      <button class="btn secondary" id="restart">
+        ↻ আবার শুরু থেকে দেখো
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<audio id="song" src="mysong.mp3" loop preload="none"></audio>
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
